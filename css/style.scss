@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$color-primary: #000;
+$color-primary-lighter: #6F787E;
+$color-primary-darker: #545D61;
+
+$color-secondary: #fff;
+$color-secondary-darker: #79858B;
+$color-secondary-lighter: #F0EBE6;
+
+$color-additional: #C3F53C;
+$color-additional-darker: #00C805;
+$color-additional-lighter: #FF90AF;
+
+.body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+ }
+
+.header__registration,
+.subscribe__btn
+{
+	background-color: $color-additional-darker;
+}
+.subscribe {
+	&__input {
+		background-color:#1E2124;
+		border-radius: 1.5rem;
+	}
+	&__btn {
+		position: relative;
+		bottom: 2.75rem;
+		left: 18.5rem;
+	}
+}
+
+
+.overview {
+	background-color: $color-additional;
+	&__info {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(/img/warning-1.svg);
+			left: -7%;
+		}
+	}
+	
+}
+
+.investors__link {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: url(/img/arrow-invest.svg);
+		right: -35px;
+	}
+}
+
+.shares {
+	background: url(/img/shapes.png) no-repeat right;
+	background-size: contain;
+	&__desc,
+	&__info {
+		color: $color-primary-lighter;
+	}
+	&__info {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(/img/warning.svg);
+			left: -4%;
+		}
+	}
+}
+
+.learn {
+	&__slider {
+		margin-right: -90px;
+	}
+	&__text {
+		margin-left: -80px;
+	}
+	&__item:not(.active) {
+		color: $color-primary-darker;
+	}
+}
+
+.products {
+	background-color: $color-secondary-lighter;
+	& > .container {
+		background: url(/img/cash.png) no-repeat right;
+		background-size: 35%;
+	}
+	&__item:not(.active){
+		color: $color-primary-lighter;
+	}
+	&__item:last-child{
+		color: $color-additional-lighter;
+	}
+	&__info-warning {
+		color: $color-primary-lighter;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(/img/warning.svg);
+			left: -11%;
+		}
+	}
+}
+
+.footer__top {
+	grid-row: 1fr 1fr;
+}
+
+.footer__bottom{
+	&-wrap--green{
+		color:$color-additional-darker;
+	}
+	&-warning {
+		color: $color-primary-lighter;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(/img/warning.svg);
+			left: -3.5%;
+		}
+	}
+}

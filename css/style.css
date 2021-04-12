@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__registration,
+.subscribe__btn {
+  background-color: #00C805;
+}
+
+.subscribe__input {
+  background-color: #1E2124;
+  border-radius: 1.5rem;
+}
+.subscribe__btn {
+  position: relative;
+  bottom: 2.75rem;
+  left: 18.5rem;
+}
+
+.overview {
+  background-color: #C3F53C;
+}
+.overview__info {
+  position: relative;
+}
+.overview__info::before {
+  position: absolute;
+  content: url(/img/warning-1.svg);
+  left: -7%;
+}
+
+.investors__link {
+  position: relative;
+}
+.investors__link::after {
+  position: absolute;
+  content: url(/img/arrow-invest.svg);
+  right: -35px;
+}
+
+.shares {
+  background: url(/img/shapes.png) no-repeat right;
+  background-size: contain;
+}
+.shares__desc, .shares__info {
+  color: #6F787E;
+}
+.shares__info {
+  position: relative;
+}
+.shares__info::before {
+  position: absolute;
+  content: url(/img/warning.svg);
+  left: -4%;
+}
+
+.learn__slider {
+  margin-right: -90px;
+}
+.learn__text {
+  margin-left: -80px;
+}
+.learn__item:not(.active) {
+  color: #545D61;
+}
+
+.products {
+  background-color: #F0EBE6;
+}
+.products > .container {
+  background: url(/img/cash.png) no-repeat right;
+  background-size: 35%;
+}
+.products__item:not(.active) {
+  color: #6F787E;
+}
+.products__item:last-child {
+  color: #FF90AF;
+}
+.products__info-warning {
+  color: #6F787E;
+  position: relative;
+}
+.products__info-warning::before {
+  position: absolute;
+  content: url(/img/warning.svg);
+  left: -11%;
+}
+
+.footer__top {
+  grid-row: 1fr 1fr;
+}
+
+.footer__bottom-wrap--green {
+  color: #00C805;
+}
+.footer__bottom-warning {
+  color: #6F787E;
+  position: relative;
+}
+.footer__bottom-warning::before {
+  position: absolute;
+  content: url(/img/warning.svg);
+  left: -3.5%;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robinhood</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__inner grid grid-cols-6 items-center gap-4 h-16">
+			<div class="logo header__logo justify-start col-span-1 ml-4">
+				<a href="#" class="header__link">
+					<img src="img/logo.svg" alt="" class="header__img">
+				</a>
+			</div>
+			<nav class="menu justify-self-start col-span-3">
+				<ul class="menu__list flex text-lg">
+					<li class="menu__item pr-10">
+						<a href="#">Products</a>
+					</li>
+					<li class="menu__item pr-10">
+						<a href="#">Learn</a>
+					</li>
+					<li class="menu__item pr-10">
+						<a href="#">Support</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Who we are</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__buttons justify-self-center col-span-1 col-start-6 col-end-7 text-lg">
+				<button class="btn header__login py-2.5 mr-4 font-bold">Log In</button>
+				<button class="btn header__registration py-2.5 px-10 rounded-3xl font-bold">Sign Up</button>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="overview border-b-2 border-black">
+			<div class="container mx-auto px-28 py-4 flex">
+				<div class="overview__text self-center w-2/4 pr-16">
+					<h1 class="visually-hidden">Robinhood</h1>
+					<h2 class="overview__title text-5xl font-bold mb-8">Investing for Everyone</h2>
+					<p class="overview__desc text-2xl font-bold mb-8">Commission-free investing, plus the tools you need to
+						put your
+						money
+						in
+						motion.
+						Sign up and get your
+						first
+						stock for free. Certain limitations apply.</p>
+					<button class="overview__btn py-2.5 px-10 rounded-3xl font-bold bg-black text-white mb-8">Sign
+						Up</button>
+					<p class="overview__info ml-10 text-lg">Commissions & Free Stock Disclosures</p>
+				</div>
+				<img class="overview__img w-2/4" src="img/debt.png" alt="">
+			</div>
+		</section>
+		<section class="more flex justify-center content-center py-8 border-b-2 border-black">
+			<h2 class="visually-hidden">More</h2>
+			<p class="more__desc text-lg self-center">See our <a class="more__link font-bold underline" href="#">fee
+					schedule</a> to
+				learn more
+				about cost.
+			</p>
+		</section>
+		<section class="investors flex border-b-2 border-black">
+			<img class="investors__img pl-2" src="img/investors.png" alt="">
+			<div class="investors__text self-center pl-4">
+				<h2 class="investors__title text-5xl font-bold pb-10">We are all investors.</h2>
+				<a class="investors__link text-lg font-bold" href="#">See the campaign</a>
+			</div>
+		</section>
+		<section class="shares flex">
+			<div class="container mx-auto px-28 py-16">
+				<div class="shares__text w-11/12">
+					<h2 class="shares__title text-3xl pb-4">Introducing Fractional Shares</h2>
+					<p class="shares__desc text-lg pb-8">Invest in thousands of stocks with as little as $1.</p>
+					<ul class="shares__list flex justify-between mb-12 mr-20">
+						<li class="shares__item pr-10">
+							<h3 class="shares__subtitle text-lg font-bold pb-4">Invest Any Amount</h3>
+							<p class="shares__text text-lg">Choose how much you want to invest, and we’ll convert from
+								dollars
+								to parts
+								of
+								a whole share.</p>
+						</li>
+						<li class="shares__item pr-10">
+							<h3 class="shares__subtitle text-lg font-bold pb-4">Build a Balanced Portfolio</h3>
+							<p class="shares__text text-lg">Customize your portfolio with pieces of different companies and
+								funds to
+								help
+								reduce risk.</p>
+						</li>
+						<li class="shares__item pr-10">
+							<h3 class="shares__subtitle text-lg font-bold pb-4">Trade in Real Time</h3>
+							<p class="shares__text text-lg">Trades placed during market hours are executed at that time, so
+								you’ll
+								always
+								know the share price.</p>
+						</li>
+					</ul>
+					<p class="shares__info text-lg ml-10">Fractional Shares Disclosure</p>
+				</div>
+			</div>
+		</section>
+		<section class="learn bg-black text-white">
+			<div class="container mx-auto px-28 py-16 flex items-center">
+				<div class="learn__slider">
+					<ul class="learn__list text-2xl flex flex-col items-end">
+						<li class="learn__item pb-2"><img src="img/arrow-up.svg" alt=""></li>
+						<li class="learn__item pb-2 active">Learn</li>
+						<li class="learn__item pb-2">Manage</li>
+						<li class="learn__item pb-2">Customize</li>
+						<li class="learn__item"><img src="img/arrow-down.svg" alt=""></li>
+					</ul>
+				</div>
+				<img class="learn__img" src="img/phone.png" alt="">
+				<div class="learn__text">
+					<h2 class="learn__title text-5xl pb-8">Learn As You Grow</h2>
+					<p class="learn__desc text-lg">Our goal is to make investing in financial markets more affordable, more
+						intuitive, and more fun, no matter how much experience you have (or don’t have).
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="products">
+			<div class="container mx-auto px-28 py-16">
+				<h2 class="products__title text-3xl mb-8">Our Products</h2>
+				<ul class="products__list text-2xl flex">
+					<li class="products__item pr-8 active">Cash Management</li>
+					<li class="products__item pr-8">Stocks & Funds</li>
+					<li class="products__item pr-8">Options</li>
+					<li class="products__item pr-4">Gold</li>
+					<li class="products__item pl-4 border-l-2 border-black">Crypto</li>
+				</ul>
+				<p class="products__desc text-lg mt-20 mb-44">Earn 0.30% APY* on your uninvested cash and get more
+					flexibility with
+					your
+					brokerage account.</p>
+				<a class="products__link py-2 px-10 rounded-3xl font-bold bg-black text-white mb-8" href="#">Learn
+					More</a>
+				<div class="products__info mt-28 flex justify-between">
+					<p class="products__info-warning ml-10 text-lg">Variable APY and Debit Card Disclosures</p>
+					<p class="text-sm">Cash Management offered through Robinhood Financial</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer bg-black text-white">
+		<div class="container mx-auto px-28 py-16">
+			<div class="footer__top border-b-2  grid text-lg grid-cols-2">
+				<div class="footer__links flex">
+					<ul class="footer__list mr-10">
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Stocks & Funds
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Options
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Gold
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Cash Management
+							</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">
+								Crypto
+							</a></li>
+					</ul>
+					<ul class="footer__list mr-28">
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Learn
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Support
+							</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">
+								Snacks
+							</a></li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								About us
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Careers
+							</a></li>
+						<li class="footer__item mb-4"><a href="#" class="footer__link">
+								Affiliates
+							</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">
+								Blog
+							</a></li>
+					</ul>
+				</div>
+				<div class="subscribe ml-44 col-start-2 justify-self-end">
+					<img class="subscribe-logo mb-4" src="img/snacks.svg" alt="">
+					<form class="subscribe__form" action="#">
+						<p class="mb-4">The 3-minute newsletter with fresh takes on the financial news you need to start your
+							day.</p>
+						<input class="subscribe__input w-full px-8 py-4" type="email" placeholder="name@email.ru">
+						<button class="subscribe__btn px-10 rounded-3xl font-bold text-black" type="submit">Subscribe</button>
+					</form>
+				</div>
+				<div class="footer__privacy justify-self-end text-right col-start-2 mb-8">
+					<p>Check the background of the firm on FINRA’s BrokerCheck</p>
+					<p>Brokerage Customer Relationship Summary</p>
+					<p>Robinhood Terms & Conditions</p>
+					<p>Disclosure Library</p>
+					<p>Privacy</p>
+				</div>
+			</div>
+			<div class="footer__bottom my-8">
+				<p class="mb-8">© 2021 Robinhood. All rights reserved.</p>
+				<p class="mb-8">Robinhood means Robinhood Markets and its in-application and web experiences with its family
+					of wholly
+					owned subsidiaries which includes Robinhood Financial, Robinhood Securities, and Robinhood Crypto.</p>
+				<p class="mb-8">All investments involve risks, including the possible loss of capital.</p>
+				<div class="footer__bottom-wrap flex">
+					<p>Securities trading is offered to self-directed customers by Robinhood Financial. Robinhood Financial
+						is a
+						member of the</p>
+					<p class="footer__bottom-wrap--green mx-8">Financial Industry Regulatory Authority (FINRA)</p>
+					<span>.</span>
+				</div>
+				<p class="footer__bottom-warning text-lg mt-8 ml-10">View Important Disclosures</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
